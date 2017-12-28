@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<html>
+	<body>
+		<div class="header">
+			<h2>Welcome to Next Word Prediction Application</h2>
+			<p>This application is a next word prediction. The sample data is downloaded from the coursera site. The data consists of the twitter, blogs and news data.</p>
+			<p>The <a href="https://en.wikipedia.org/wiki/N-gram" target="_blank">n-grams</a> were generated using the 'tm' and the 'quanteda' packages. The sample data is processed to remove urls, special characters, punctuation, numbers, stopwords and curse words. The <a href="https://en.wikipedia.org/wiki/Bigram" target="_blank">bi-grams</a> and <a href="https://en.wikipedia.org/wiki/Trigram" target="_blank">tri-grams</a> are generated with <a href="https://en.wikipedia.org/wiki/N-gram#Skip-gram" target="_blank">skip grams</a> of 0:3 for 10% of the sample data. The n-grams data is further processed by splitting the data into current word and next word with their counts. This format is basically markov chains in the simplest form. This final data is stored in the bigrams-markov.rds and trigrams-markov.rds so that we are only using the results for this shiny application.</p>
+			<p>The user types the word in the input box and the next 10 words based on frequencies are predicted in the drop down list. The user can select the next word and the input is updated with the word and the search is run again and the next 10 words are populated in the drop down list. This process is repeated over and over.</p>
+			<p>The word cloud plot is generated from the cached data. The 'Minimum Frequency' a word appears and the 'Maximum Number of Words' variables are used to re-plot the data visualization.</p>
+			<p>The 'Calculate Next Words' button runs the search based on what has been typed so far to predict the next 10 words.")
+		</div>
+	</body>
+</html>
