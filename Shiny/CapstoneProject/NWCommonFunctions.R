@@ -5,7 +5,7 @@ library(tm)
 library(quanteda)
 library(wordcloud)
 
-options(mc.cores=1)
+# options(mc.cores=1)
 
 trim <- function (x) gsub("^\\s+|\\s+$", "", x)
 
